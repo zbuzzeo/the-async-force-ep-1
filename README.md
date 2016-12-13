@@ -14,8 +14,6 @@ Remember that this is a **client side** excercise which means that all the code 
 7. Log the results of the API request to the console in your browser.
 
 ## Notes & Links
-*Slides on Async HTTP Request with XHR:
-*http://slides.com/sgnl/xhr#/
-
-Documentation on 'XMLHttpRequest' method:
+1. Slides on Async HTTP Request with XHR: http://slides.com/sgnl/xhr#/
+1. Documentation on 'XMLHttpRequest' method:
 https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
