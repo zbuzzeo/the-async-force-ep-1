@@ -13,6 +13,9 @@ Remember that this is a **client side** excercise which means that all the code 
    to the following URL: http://swapi.co/api/people/1
 7. Log the results of the API request to the console in your browser.
 
-## Hints
-Here's more information on the 'XMLHttpRequest' method:
+## Notes & Links
+*Slides on Async HTTP Request with XHR:
+*http://slides.com/sgnl/xhr#/
+
+Documentation on 'XMLHttpRequest' method:
 https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
