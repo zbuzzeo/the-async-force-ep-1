@@ -4,14 +4,28 @@ An **async** Exercise using **client side** XHR accessing the swapi API at https
 Remember that this is a **client side** excercise which means that all the code will be executed via the browser's javascript runtime, which means that our global context is the 'window' object.  Go ahead and type in 'window' in the browser console to inspect the methods on the 'window' object.  In there you will find a method named 'XMLHttpRequest' which you will be using for this excercise.
 
 ## Excercise
-1. Initialize the project as an npm repository with the 'npm init' command.
-2. Create an app.js file.
-3. Create an index.html file.
+*Remember to commit after each step.*
+
+2. Make a /js folder and create an app.js file in it.
 4. In the index.html file, load app.js via script tags.
 5. Use live-reload to serve up the files to your browser.
-6. Create your XHR requests in the app.js file to make a 'GET' request
-   to the following URL: http://swapi.co/api/people/1
-7. Log the results of the API request to the console in your browser.
+6. Construct your XHR requests in the app.js to the following endpoints and
+   retrieve the data specified.
+
+   _the instructions below will mention ids and classes from index.html, study that document_
+
+  1. Get a Person object from the SWAPI, http://swapi.co/api/people/4/
+      - fill in `person4Name` with the value of Person's `name`
+      - fill in `person4HomeWorld` with the value of Person's `homeworld` (name)
+  1. Get a Person object from the SWAPI, http://swapi.co/api/people/14/
+      - fill in `person14Name` with the value of Person's `name`
+      - fill in `person14Species` with the value of Person's (first) `species` (name)
+  1. Get a list of all the films from the SWAPI, http://swapi.co/api/films/
+      - fill in `filmList` with a new `<li>` element for each `film`
+          - fill in each film's `filmTitle` with the title of the `film`
+          - create a new `<li>` in this film's `filmPlanets` for each `planet` that appeared in this `film`
+              - fill in each `planetTitle` with the name of the `planet`
+
 
 ## Notes & Links
 1. Slides on Async HTTP Request with XHR: http://slides.com/sgnl/xhr#/
