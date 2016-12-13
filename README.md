@@ -6,11 +6,10 @@ Remember that this is a **client side** excercise which means that all the code 
 ## Excercise
 *Remember to commit after each step.*
 
-2. Make a /js folder and create an app.js file in it.
-4. In the index.html file, load app.js via script tags.
+2. Make a `/js` folder and create an `app.js` file in it.
+4. In the `index.html` file, load `app.js` via script tags.
 5. Use live-reload to serve up the files to your browser.
-6. Construct your XHR requests in the app.js to the following endpoints and
-   retrieve the data specified.
+6. Construct your XHR requests in the `app.js` file to the following endpoints and retrieve the data specified.
 
    _the instructions below will mention ids and classes from index.html, study that document_
 
