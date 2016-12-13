@@ -1,8 +1,5 @@
 # The-Async-Force-Ep-1
-An **async** Exercise using **client side** XHR accessing the swapi.
-In this excercise, we will explore async programming on the clientside
-by using XHR to request information from a the swapi server at
-https://swapi.co
+An **async** Exercise using **client side** XHR accessing the swapi API at https://swapi.co
 
 Remember that this is a **client side** excercise which means that all the code will be executed via the browser's javascript runtime, which means that our global context is the 'window' object.  Go ahead and type in 'window' in the browser console to inspect the methods on the 'window' object.  In there you will find a method named 'XMLHttpRequest' which you will be using for this excercise.
 
