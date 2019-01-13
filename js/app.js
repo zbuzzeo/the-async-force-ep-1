@@ -1,29 +1,57 @@
 'use strict';
 
-const person4 = document.querySelector('#person4');
-const person4Name = document.querySelector('#person4Name');
-const person4Homeworld = document.querySelector('#person4Homeworld');
+const p4 = document.querySelector('#person4');
+const p4Name = document.querySelector('#person4Name');
+const p4HW = document.querySelector('#person4HomeWorld');
 
-const reqPerson4 = new XMLHttpRequest();
+const reqP4Name = new XMLHttpRequest();
 
-reqPerson4.addEventListener('load', function () {
-  const responseText = JSON.parse(this.responseText);
-  console.log(responseText);
-});
+function assignP4Name() {
+  const reqP4HW = new XMLHttpRequest();
+  const swObject = JSON.parse(this.responseText);
+  
+  p4Name.innerHTML = swObject.name;
 
-reqPerson4.open('GET', 'https://swapi.co/api/people/4/');
-reqPerson4.send();
+  reqP4HW.addEventListener('load', function() {
+    const planet = JSON.parse(this.responseText);
+    
+    p4HW.innerHTML = planet.name;
+  });
 
-const person14 = document.querySelector('#person14');
-const person14Name = document.querySelector('#person14Name');
-const person14Species = document.querySelector('#person14Species');
+  reqP4HW.open('GET', 'https://swapi.co/api/planets/1');
+  reqP4HW.send();
 
-const reqPerson14 = new XMLHttpRequest();
+}
 
-reqPerson14.addEventListener('load', function () {
-  const responseText = JSON.parse(this.responseText);
-  console.log(responseText);
-});
+reqP4Name.addEventListener('load', assignP4Name);
+reqP4Name.open('GET', 'https://swapi.co/api/people/4/');
+reqP4Name.send();
 
-reqPerson14.open('GET', 'https://swapi.co/api/people/14/');
-reqPerson14.send();
+const p14 = document.querySelector('#person14');
+const p14Name = document.querySelector('#person14Name');
+const p14Species = document.querySelector('#person14Species');
+
+function assignP14Name() {
+  const reqP14Species = new XMLHttpRequest();
+  const swObject = JSON.parse(this.responseText);
+  
+  p14Name.innerHTML = swObject.name;
+
+  console.log(swObject);
+
+  reqP14Species.addEventListener('load', function() {
+    const species = JSON.parse(this.responseText);
+    console.log(species);
+    console.log(p14Species);
+    p14Species.innerHTML = species.name;
+  });
+
+  reqP14Species.open('GET', 'https://swapi.co/api/species/1/');
+  reqP14Species.send();
+}
+
+const reqP14Name = new XMLHttpRequest();
+
+reqP14Name.addEventListener('load', assignP14Name);
+reqP14Name.open('GET', 'https://swapi.co/api/people/14/');
+reqP14Name.send();
